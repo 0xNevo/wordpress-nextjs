@@ -1,0 +1,29 @@
+{
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+	  "composer/installers": "~1.0",
+	  "imranhsayed/headless-cms": "^1.7",
+	  "wp-graphql/wp-graphql": "^1.11",
+	  "wp-graphql/wp-graphql-jwt-authentication": "0.5.2",
+	  "pristas-peter/wp-graphql-gutenberg": "0.3.12",
+	  "wpackagist-plugin/advanced-custom-fields": "6.0.0",
+	  "yoast/wordpress-seo": "^19.7",
+	  "ashhitch/wp-graphql-yoast-seo": "^4.18",
+	  "valu/wp-graphql-offset-pagination": "^0.2"
+  },
+  "config": {
+        "allow-plugins": true
+    },"scripts": {
+        "test": [
+            "Composer\\Config::disableProcessTimeout",
+            "phpunit"
+        ]
+    }
+}
